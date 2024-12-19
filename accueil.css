@@ -1,0 +1,207 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Partie 1 : Menu à gauche */
+.menu-gauche {
+    position: fixed; /* Fixe sur toute la hauteur */
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f3f3f3;
+    padding: 20px;
+    overflow-y: auto; /* Défilement interne si nécessaire */
+    border-right: 1px solid #ccc;
+}
+
+.menu-gauche div {
+    list-style: none;
+    margin-top: 20px;
+    color: #a65428;
+}
+
+.menu-gauche li {
+    margin: 15px 0;
+    color: #a65428;
+    font-weight: bold;
+}
+
+/* Partie 2 : Barre fixe en haut */
+.barre-haut {
+    position: fixed; /* Fixe en haut */
+    top: 0;
+    left: 250px; /* À droite du menu */
+    width: calc(100% - 250px); /* Reste de la largeur */
+    height: 60px;
+    background-color: #a65428;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* Partie 3 : Contenu principal */
+.contenu {
+       
+
+    margin-right: 0;
+    margin-top: 60px; /* Sous la barre fixe */
+     margin-left: 250px;  /* À droite du menu */
+   width: calc(100% - 250px);/* Reste de la largeur */
+    
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: calc(100vh - 60px); /* Hauteur totale moins la barre fixe */
+    
+    overflow-y: auto; /* Active le défilement vertical */
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+    
+   /* display: flex;
+    flex-wrap: nowrap;*/ /* Pas de retour à la ligne des enfants */
+    gap: 20px; /* Espace entre les blocs */
+    background-color: gainsboro
+}
+
+/* Enfants de `.contenu` */
+
+
+/* Icônes et autres éléments */
+.icons {
+    width: 100%; /* Respecte la largeur du parent */
+    height: 40%;
+    
+   display: flex;/* Alignement horizontal */
+    gap: 30px; /* Espacement entre les icônes */
+    align-items: center;
+    overflow: hidden;
+}
+
+.inf{
+    
+    width: 100%;
+    height: 10%;
+    background-color: rgba(48, 180, 197, 0.616);
+    /* text-align: center; */
+    display: flex; 
+    border-radius: 10px;
+    justify-content: center;  /* Centre horizontalement */
+    align-items: center; 
+    /* align-items: center; */
+}
+.conteneur_icon{
+   
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 250px; /* Taille du cercle */
+    height: 200px;
+    background-color: #b35e2f; /* Couleur de fond */
+    color: white; /* Couleur des icônes */
+    border-radius: 10%;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    font-size: 5rem; /* Taille des icônes */
+    position: relative;   
+}
+.conteneur_icon span {
+    position: absolute;
+    bottom: 10px; /* Position du texte */
+    font-size: 1rem; /* Taille du texte */
+    font-weight: bold;
+    text-align: center;
+}
+.infoappel{
+    margin-top: 40%;
+    width: 200%;
+    border: 1px solid;
+
+}
+#bleu{
+    background-color: rgb(35, 35, 134);
+}
+#maron_clair{
+    background-color: sandybrown
+}
+#bleu_clair{
+    background-color: rgb(0, 156, 184)
+}
+.in_ap{
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid; */
+    display: block;
+    border-radius: 5px;
+}
+.infs{
+    float: left;
+    width: 75%;
+    height: 190%;
+    /* border: 1px solid; */
+    border-radius: 5px;
+    background-color: white;
+}
+.app{
+    float: right;
+    height: 150%;
+    width: 22%;
+    /* border: 1px solid; */
+    border-radius: 5px;
+    background-color: white;
+
+}
+h4,h5{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(0, 47, 255);
+}
+.sp{
+    height: 10%;
+    width: 90%;
+    margin-left: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center;    /* Centrage vertical */
+    background-color:  rgb(160, 239, 250);
+    /* border: 1px solid; */
+    border-radius: 5px;
+}
+.sp2{
+   
+    margin-left: 15px;
+    margin-top: 20px;
+    
+    color: #b35e2f;
+}
+.cadre{
+    height: 30%;
+    width: 70%;
+    margin-left: 30px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; 
+    border-radius: 5px;
+    background-color: rgb(160, 239, 250);
+}
+.icon a{
+    color: #b35e2f;
+    text-decoration: none;
+}
+

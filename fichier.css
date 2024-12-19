@@ -1,0 +1,38 @@
+body{
+    background-image: url("ugb2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.form{
+  margin-top: 40px;
+height: auto; 
+width: 30%;
+border: 1px solid;
+border-radius: 20px; 
+text-align: center;
+ margin: 0 auto; 
+background-color: rgb(241, 241, 241);
+opacity: 0.6;
+
+}
+  h3{
+    color: rgb(165, 81, 42);
+  }
+  input[type="submit"] {
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: rgb(221, 81, 16);
+    color: white;
+  }
+  .span{
+    margin-left: 15px;
+  }
+  span{ 
+    color: rgb(0, 174, 255);
+  }
+  .connexion{
+    margin-top: 10px;
+  }
+  
